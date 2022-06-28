@@ -1,0 +1,32 @@
+<div class="sidebar-sticky">
+  <div class="sidebar-about">
+    {% if site.logo %}
+    <a class="no-hover" href="{{ '/' | relative_url }}" tabindex="-1">
+      <img src="{% include_cached smart-url url=site.logo %}" class="avatar"
+        alt="{{ site.short_title | default:site.title }}" width="120" height="120" loading="lazy" />
+    </a>
+    {% endif %}
+    <a class="sidebar-title" href="{{ '/' | relative_url }}">
+      <h2 class="h1" style="font-size: 28px;">{{ site.short_title | default:site.title }}</h2>
+    </a>
+    {% assign text = site.tagline | default:site.description %}
+    {% if text %}
+    <span style="font-size: 14px;">
+      <p class="{% if text.size > 100 %}fine{% endif %}">
+        {{ text | markdownify | replace:'
+      <p>','' | replace:'</p>','' }}
+      </p>
+    </span>
+    {% endif %}
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    {% include body/nav.html %}
+  </nav>
+  {% assign author = site.data.authors.first[1] | default:site.author %}
+  <img
+    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Foasis791.github.io&count_bg=%230D69B5&title_bg=%23095595&icon=spring.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false" />
+  <div class="sidebar-social">
+    {% include components/social.html author=author %}
+  </div>
+</div>
