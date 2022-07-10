@@ -15,7 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 0.5em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -49,6 +49,8 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
+  font-family: $noto-sans;
+  letter-spacing: 0.5px;
   font-weight: bold;
   // z-index: 20;
 }
@@ -56,6 +58,7 @@
 .site-subtitle {
   display: block;
   font-size: $type-size-8;
+  font-weight: 400;
 }
 
 .masthead__menu {
@@ -82,6 +85,7 @@
 }
 
 .masthead__menu-item {
+  font-family: $do-hyeon;
   display: block;
   list-style-type: none;
   white-space: nowrap;

@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hyunwook Kim"
   avatar           : "/assets/img/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "<details><summary>💻💻<strong>Who Am I?</strong>💻💻</summary><ul>
+  bio              : "<details><summary>💻<strong>Who Am I?</strong></summary><ul>
   <li>👨🏻‍💻 서버 개발자<sub>(진)</sub></li>
   <li>🏋🏻 신체 건강</li>
   </ul></details>" 
