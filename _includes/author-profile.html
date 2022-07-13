@@ -22,6 +22,7 @@
     {% endif %}
   </div>
 
+  <div style="display: table-cell;">
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
@@ -242,5 +243,9 @@
 
       {% include author-profile-custom-links.html %}
     </ul>
+  </div>
+  <div style="display: block; min-width: 80px;">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Foasis791.github.io&count_bg=%232C5678&title_bg=%233580BA&icon=spring.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false" />
+  </div>
   </div>
 </div>
